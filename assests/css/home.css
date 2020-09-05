@@ -144,7 +144,7 @@ button.medium {
   color: #ff8c37;
 }
 button.dark {
-  background: #ff8c37;
+  background: #ec3750;
   color: white;
 }
 button.noshadow {
@@ -899,7 +899,7 @@ position: sticky;
 
 #splash #splash-body #splash-content {
   max-width:1000px;
-  color: #ff8c37;
+  color: #ec3750;
 }
 @media only screen and (max-width: 850px) {
   #splash #splash-body #splash-content {
