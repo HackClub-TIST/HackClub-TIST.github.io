@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+ 
+
+  <link rel="icon" href="assests/output-onlinepngtools.png" type="image/icon type">
+
+  <link rel="stylesheet" href="assests/css/home.css">
+
+  <!-- Google Material Icons -->
+
+
+  <!-- Google Fonts: Muli -->
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- For responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&amp;display=swap" rel="stylesheet">
+  <title>Hack Club - TIST </title>
+  <style></style>
+  <!-- <script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js"></script> -->
+</head>
+
+<body data-gr-c-s-loaded="true" style="background-color: #fae0cd;" oncontextmenu="return false"
+onkeydown="return false;" onmousedown="return false;" >
+
+  <!-- Splash (top 100vh of page) -->
+  <div id="splash">
+
+    <a href="home.html"><img id="logo" src="assests/output-onlinepngtools.png"></a>
+
+    <!-- Responsive navbar -->
+    
+
+    
+    <!-- Splash body -->
+    <div id="splash-body">
+      <div id="splash-img">
+        <img id="splash-img-left" src="assests/output-onlinepngtools.png">
+        <!-- <img id="splash-img-right"
+          src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/cal_hacks.png"> -->
+      </div>
+      <div id="splash-content">
+        <h1>Hack Club - TIST</h1>
+        <p>Member applications are now open.
+          Apply Now!</p>
+        <button class="dark" onclick="window.open('https://forms.gle/CuDrThgP5W66oPpB6', '_blank')">Fill the
+          form</button>
+        <h3 id="notification-confirmation" class="hide">Thanks for subscribing :)</h3>
+      </div>
+    </div>
+
+  <script>
+    // function subscribe() {
+    //   const email = document.getElementById('email-input').value;
+
+    //   fetch('https://api.calhacks.io/static/subscribe', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({ email })
+    //   }).then((response) => {
+    //     if (response.status !== 204) return;
+
+    //     document.getElementById('email-input').value = '';
+
+    //     document
+    //       .getElementById('notification-confirmation')
+    //       .classList.remove('hide');
+    //     document.getElementById('notification-input').classList.add('hide');
+    //   });
+    // }
+
+    // const closePopup = function () {
+    //   document.getElementById('hacknow-popup').classList.add('close')
+    // }
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   setTimeout(() => {
+    //     document.getElementById('hacknow-popup').classList.remove('close')
+    //   }, 2000)
+    // }, false);
+
+    const scrollToContent = function () {
+      document.getElementById('content').scrollIntoView({
+        behavior: 'smooth'
+      });
+    };
+
+    // const actives = [
+    //   {
+    //     name: 'Alex',
+    //     url:
+    //       'https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/profile_images/alex.jpg'
+    //   },
+    // ];
+
+    // since we have duplicate names sometimes, compare
+    // url if same name because filename is different
+    const sorted = actives.sort((a, b) =>
+      a.name === b.name
+        ? a.url.localeCompare(b.url)
+        : a.name.localeCompare(b.name)
+    );
+    for (let director of sorted) {
+      const div = document.createElement('div');
+      div.className = 'team-member';
+
+      const img = document.createElement('img');
+      img.setAttribute('src', director.url);
+      div.appendChild(img);
+
+      const h4 = document.createElement('h4');
+      h4.innerHTML = director.name;
+      div.appendChild(h4);
+
+      document.getElementById('team-content').appendChild(div);
+    }
+
+    function toggleMenu() {
+      let topnav = document.getElementById('topnav');
+      if (topnav.className === '') {
+        topnav.className += 'responsive';
+      } else {
+        topnav.className = '';
+      }
+    }
+  </script>
+
+
+
+</body>
+
+</html>
