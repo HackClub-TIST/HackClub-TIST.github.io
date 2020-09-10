@@ -1089,8 +1089,8 @@ position: sticky;
   align-items: center;
 }
 #content #team #team-content .team-member img {
-  width: 200px;
-  height: 80px;
+  width: 100px;
+  height: 40px;
   /* border-radius: 100%; */
   margin-bottom: 1.0rem;
 }
