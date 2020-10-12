@@ -5,11 +5,8 @@
 		<link rel="icon" href="images/logo.ico" type="image/x-icon"/>
 		<title>Hack Club - TIST</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-
+		
 	</head>
 	<body class="is-preload">
 
@@ -111,23 +108,20 @@
 							<div class="split style1">
 								<section>
 									
-										<form method="post" action="mailto:farzanfa07@gmail.com">
+										<form name="contact" method="POST" data-netlify="true">
 											<div class="fields">
 												<div class="field half">
-													<label for="name">Name</label>
-													<input type="text" name="name" id="name" />
+													<label>Your Name: <input type="text" name="name" /></label>   
 												</div>
 												<div class="field half">
-													<label for="email">Email</label>
-													<input type="text" name="email" id="email" />
+													<label>Your Email: <input type="email" name="email" /></label>
 												</div>
 												<div class="field">
-													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="5"></textarea>
+													<label>Message: <textarea name="message"></textarea></label>
 												</div>
 											</div>
 											<ul class="actions">
-												<li><a href="" class="button submit">Send Message</a></li>
+												<li><button type="submit">Send</button></li>
 											</ul>
 										</form>
 									
@@ -170,7 +164,6 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
